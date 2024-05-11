@@ -105,7 +105,6 @@ class NeuralNetwork {
   }
 }
   
-  // Update the training data with more labeled examples
   const trainingData = [
     { input: [1, 100.25, 1234, 8], output: [0] },
     { input: [2, 50.75, 5678, 12], output: [0] },
