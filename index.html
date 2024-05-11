@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Fraud Detection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Financial Fraud Detection</h1>
+  </header>
+  <main>
+    <section class="upload-section">
+      <h2>Upload Financial Data</h2>
+      <div id="fileContent"></div>
+      <div class="file-upload">
+        <input type="file" id="fileInput" accept=".csv, .xlsx, .xls, .txt">
+        <label for="fileInput">
+          <span class="file-upload-text">Choose a file</span>
+          <span class="file-upload-button">Browse</span>
+        </label>
+      </div>
+      <button id="scanButton" disabled>Scan for Fraud</button>
+    </section>
+    <section class="result-section" id="resultSection" style="display: none;">
+      <h2>Scan Results</h2>
+      <div id="resultContainer"></div>
+    </section>
+  </main>
+  <!-- <canvas id="networkCanvas"></canvas> -->
+  <footer>
+    <p>&copy; Financial Fraud Detection System</p>
+  </footer>
+  <script src="app.js"></script>
+  <!-- <script src="visualizer.js"></script> -->
+  <script src="utils.js"></script>
+  <script src="network.js"></script>
+</body>
+</html>
