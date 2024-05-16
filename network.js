@@ -128,6 +128,8 @@ class NeuralNetwork {
     { input: [20, 275.5, 2222, 21], output: [0] },
     { input: [21, 650.0, 3333, 23], output: [1] },
     { input: [22, 145.75, 4444, 10], output: [0] },
+    { input: [22, 145.75, 4444, 10], output: [0] },
+    { input: [22, 145.75, 4444, 10], output: [0] },
     { input: [24, 135.95, 4234, 20], output: [1] },
   ];
   
