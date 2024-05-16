@@ -4,12 +4,12 @@ class NeuralNetwork {
     this.inputCount = inputCount;
     this.hiddenCount = hiddenCount;
     this.outputCount = outputCount;
-  //   this.weightsInputHidden = Array.from({ length: inputCount }, () =>
-  //     Array.from({ length: hiddenCount }, () => Math.random())
-  //   );
-  //   this.weightsHiddenOutput = Array.from({ length: hiddenCount }, () =>
-  //     Array.from({ length: outputCount }, () => Math.random())
-  //   );
+    this.weightsInputHidden = Array.from({ length: inputCount }, () =>
+      Array.from({ length: hiddenCount }, () => Math.random())
+    );
+    this.weightsHiddenOutput = Array.from({ length: hiddenCount }, () =>
+      Array.from({ length: outputCount }, () => Math.random())
+    );
     this.initWeights();
   }
 
@@ -128,11 +128,12 @@ class NeuralNetwork {
     { input: [20, 275.5, 2222, 21], output: [0] },
     { input: [21, 650.0, 3333, 23], output: [1] },
     { input: [22, 145.75, 4444, 10], output: [0] },
+    { input: [24, 135.95, 4234, 20], output: [1] },
   ];
   
   // Train the neural network
   const neuralNetwork = new NeuralNetwork(4, 4, 1); // 4 input features, 4 hidden neurons, 1 output node
-  neuralNetwork.train(trainingData, 10000, 0.1); // Train for 10,000 epochs with a learning rate of 0.1
+  neuralNetwork.train(trainingData, 10000, 0.9); // Train for 10,000 epochs with a learning rate of 0.1
   
   // Test data for prediction
   const testData = [
